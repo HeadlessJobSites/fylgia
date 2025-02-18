@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LKF - Lediga tjänster</title>
+    <title>Fylgia - Lediga tjänster</title>
     <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/index-style.css">
 <link rel="stylesheet" href="./css/job-details-style.css">
-<link rel="icon" type="image/x-icon" href="./files/lkf-favicon.ico">
+<link rel="icon" type="image/x-icon" href="./files/fylgia-favicon.ico">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -19,12 +19,12 @@
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script type="text/javascript" src="https://web103.reachmee.com/customerjs/helper.js"></script>
 	
-  <meta property="og:title" content="Lunds Kommuns Fastighets ABs karriärportal">
-  <meta property="og:image" content="https://headlessjobsites.github.io/lkf/files/Lediga-jobb.jpg"">
-  <meta property="og:url" content="https://headlessjobsites.github.io/lkf/">
+  <meta property="og:title" content="Advokatfirman Fylgia KBs karriärportal">
+  <meta property="og:image" content="https://headlessjobsites.github.io/fylgia/files/Lediga-jobb.jpg"">
+  <meta property="og:url" content="https://headlessjobsites.github.io/fylgia/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lunds Kommuns Fastighets ABs karriärportal">
-  <meta name="twitter:image" content="https://headlessjobsites.github.io/lkf/files/Lediga-jobb.jpg"">
+  <meta name="twitter:title" content="Advokatfirman Fylgia KBs karriärportal">
+  <meta name="twitter:image" content="https://headlessjobsites.github.io/fylgia/files/Lediga-jobb.jpg"">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/fylgia')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.0);">
     <div class="container m-py-1">
         <a class="navbar-brand" href="./" aria-label="Home">
-            <img src="./files/lkf-light.png" class="d-inline-block align-top" alt="">
+            <img src="./files/fylgia-grey-logo.svg" class="d-inline-block align-top" alt="">
         </a>
         <div class="d-flex justify-content-end align-items-center flex-grow-1">
             <a class="nav-link ml-auto d-lg-none btn btn-primary apply-btn m-mr-2" href="#appform-header">Ansök</a>
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <a class="nav-link" href="#our-process">Rekryteringsprocess</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="blank" href="https://lkf.se">lkf.se <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" target="blank" href="https://fylgia.se">fylgia.se <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function loadExternalScriptAndBuildIframe() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://web103.reachmee.com/customerjs/I018-716-2.js';
+    script.src = 'https://web103.reachmee.com/customerjs/I010-2500-7.js';
     script.onload = function() {
         buildIframe();
     };
@@ -288,11 +288,11 @@ function loadExternalScriptAndBuildIframe() {
 
 function buildIframe() {
     var iFrameUrl = 'https://web103.reachmee.com/ext/';
-    var validator = '7f4f3be3058e3cb999c1bf054afc7b49';
-    var iid = 'I018';
-    var customer = '716';
-    var site = '2';
-    var iHelperUrl = 'https://headlessjobsites.github.io/lkf/job-details.html?';
+    var validator = '01f5c8c8781b5095cf003ac77fc99e54';
+    var iid = 'I010';
+    var customer = '2500';
+    var site = '7';
+    var iHelperUrl = 'https://headlessjobsites.github.io/fylgia/job-details.html?';
     var height = '4000';
     var langDef = 'SE';
     var title = 'ReachMee Recruit external site';
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const jobId = params.get('rmjob') || params.get('jobId');
 
     // Fetch job details (assuming you have an endpoint to get job details by jobId)
-    fetch(`https://api.talentech.io/reachmee/feed/lkf`) // Replace with your actual API endpoint
+    fetch(`https://api.talentech.io/reachmee/feed/fylgia`) // Replace with your actual API endpoint
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === parseInt(jobId));
@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     iframe.style.width = "100%";
                     iframe.style.border = "none";
                     iframe.id = "applicationFormIframe";
-                    const iframeSrc = `https://web103.reachmee.com/ext/I018/716/apply?job_id=${jobId}&site=2&validator=7f4f3be3058e3cb999c1bf054afc7b49&lang=SE&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
+                    const iframeSrc = `https://web103.reachmee.com/ext/I010/2500/apply?job_id=${jobId}&site=7&validator=01f5c8c8781b5095cf003ac77fc99e54&lang=SE&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
                     iframe.setAttribute('src', iframeSrc);
                     document.getElementById('applicationFormContainer').appendChild(iframe);
                 }
@@ -566,7 +566,7 @@ window.addEventListener('message', function(event) {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web103.reachmee.com/ext/I018/716/subscribe?site=2&lang=SE&validator=7f4f3be3058e3cb999c1bf054afc7b49";
+        var iframeUrl = "https://web103.reachmee.com/ext/I010/2500/subscribe?site=7&lang=SE&validator=01f5c8c8781b5095cf003ac77fc99e54";
         document.getElementById('modalIframe').src = iframeUrl;
         $('#exampleModal').modal('show');
     });
@@ -579,16 +579,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="text-center bg-dark text-light py-5">
     <div class="container">
-        <img src="./files/lkf-light.png" alt="LKF Logo" class="mb-3" style="max-width: 180px;">
+        <img src="./files/fylgia-grey-logo.svg" alt="Fylgia Logo" class="mb-3" style="max-width: 180px;">
                 <div class="mt-3 mb-4" style="max-width: 600px; margin: auto;">
-		 <p style="font-size: 1.25rem;">LKF erbjuder hyresbostäder i Lunds stad, Genarp, Södra Sandby, Stångby, Veberöd, Dalby och Revinge. Totalt äger och förvaltar vi drygt 10.000 bostadslägenheter, vilket innebär att mer än 20 000 lundabor har sitt hem hos oss.
-
-</p>
+		 <p style="font-size: 1.25rem;">Fylgia är en advokatbyrå som är stor nog att ge sina klienter fullservice i alla affärsjuridiska frågor. Vi är också stolta över att behålla den personliga kontakten och engagemanget för dig och din bransch.
+		 </p>
 		</div>
         <div class="">
-            <a href="https://www.facebook.com/LKFLUND/"><img src="./files/TT-f.svg" alt="Icon 1" class="mx-2" style="width: 30px; height: 30px;"></a>
-            <a href="https://se.linkedin.com/company/lkf-lund"><img src="./files/TT-l.svg" alt="Icon 2" class="mx-2" style="width: 30px; height: 30px;"></a>
-            <a href="https://lkf.no/kontakt-selskapet/"><img src="./files/TT-e.svg" alt="Icon 4" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://www.facebook.com/AdvokatfirmanFylgia/"><img src="./files/TT-f.svg" alt="Icon 1" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://se.linkedin.com/company/advokatfirman-fylgia/"><img src="./files/TT-l.svg" alt="Icon 2" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://www.fylgia.se/om-fylgia/#contact"><img src="./files/TT-e.svg" alt="Icon 4" class="mx-2" style="width: 30px; height: 30px;"></a>
         </div>
     </div>
 </section>
@@ -758,7 +757,7 @@ $(document).ready(function () {
 });
 
 function fetchJobs(currentJobId) {
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/fylgia')
         .then(response => response.json())
         .then(data => {
             jobs = data.filter(job => job.ad_id !== parseInt(currentJobId));
@@ -812,7 +811,7 @@ $(document).ready(function() {
     // Get 'rmjob' if present, otherwise get 'jobId'
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/fylgia')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -903,7 +902,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openApplication !== null) {
         // Change the src of the iframe
         const applicationFormIframe = document.getElementById('applicationFormIframe');
-        applicationFormIframe.src = "https://web103.reachmee.com/ext/I018/716/apply?site=2&lang=SE&validator=7f4f3be3058e3cb999c1bf054afc7b49&job_id=-1";
+        applicationFormIframe.src = "https://web103.reachmee.com/ext/I010/2500/apply?site=7&lang=SE&validator=01f5c8c8781b5095cf003ac77fc99e54&job_id=-1";
         
         // Hide the job description and metadata
         document.getElementById('our-process').style.display = 'none';
