@@ -180,8 +180,8 @@ h2 {
 }
 .background-image {
 	background-size: cover;
-	background-position: center;
-	min-height: 400px;
+	background-position: 25% 20%;
+	min-height: 450px;
     	/*border-radius: 8px 40px 0 0;*/
 }
 .text-padding {
