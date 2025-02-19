@@ -20,62 +20,6 @@
 	font-display: swap;
 }
 
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-UltraLight.ttf');
-	font-weight: 200;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-Medium.ttf');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-SemiBold.ttf');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-Regular.ttf');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-UltraBold.ttf');
-	font-weight: 800;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-Light.ttf');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-Black.ttf');
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-UltraBold.ttf');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
 .navbar-brand img {
     height: 50px;
 }
@@ -162,23 +106,35 @@
 .job-item {
 	word-wrap: break-word;
 }
-/* body {
-	font-family: Telegraf;
-	font-weight:;
-} */
+body {
+	font-family: 'Beatrice', sans-serif;
+}
+
+h1, h2, h3  {
+	font-family: 'Season', serif;
+	letter-spacing: 1.1px;
+}
+
 h1 {
 	font-family: 'Season',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	font-weight: 400;
 	font-size: 4rem;
 	margin-bottom: 2rem;
 }
+
+.employee-name {
+	font-size: 1.7rem;
+	font-weight: 800
+}
+
 #position-title {
-    font-family: 'Season';
+    font-family: 'Season', serif;
     font-weight: 800;
     font-size: 4rem;
 }
 .btn-primary {
 	background-color: #B497FF;
+	color: #1B1B1F;
 	border: 0;
 	border-radius: 0px;
     padding: 0.6rem 2.5rem;
@@ -198,7 +154,6 @@ h1 {
 }
 h2 {
 	font-size: 3rem;
-	font-weight: 700;
 }
 .background-image {
 	background-size: cover;
@@ -356,7 +311,7 @@ h2 {
 }
 .quote-section {
 	background-color: #B497FF;
-	color: #fff;
+	color: #1B1B1F;
 	padding: 60px 20px;
 }
 .quote-section .container {
@@ -364,12 +319,12 @@ h2 {
 	margin: auto;
 }
 .blockquote p {
-	font-size: 40px;
-	font-weight: 800;
+	font-size: 2.2rem;
+	font-weight: 600;
 	line-height: 1.5;
 }
 .blockquote-footer {
-	color: #fff;
+	color: #1B1B1F;
 	font-size: 20px;
 }
 .benefits-section .container {
@@ -415,7 +370,7 @@ h2 {
     align-items: center;
     justify-content: center;
     z-index: 2;
-    color: #fff;
+    color: #1B1B1F;
 }
 .benefit-icon img {
 	width: 25px;
@@ -639,7 +594,7 @@ a:hover {
 	font-weight: 800;
 }
 .bg-dark {
-	background-color: #212121 !important;
+	background-color: #1B1B1F !important;
 }
 @media (max-width: 991.98px) {
 	.background-image {
@@ -813,7 +768,7 @@ font-size: 1.8rem;
     color: rgba(255, 255, 255);
 }
 .process-section .process-content h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 .card-title {
