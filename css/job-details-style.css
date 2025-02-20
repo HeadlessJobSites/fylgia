@@ -1,59 +1,25 @@
+/* ------------------- */
+/* Typography          */
+/* ------------------- */
+
+/* fylgia body text */
 @font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-UltraLight.ttf');
-	font-weight: 200;
+	font-family: 'Beatrice';
+	src: url('../fonts/Regular.ttf');
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
+
+/* fylgia headings */
 @font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-Medium.ttf');
-	font-weight: 500;
+	font-family: 'Season';
+	src: url('../fonts/SeasonSerif-Regular.ttf');
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-SemiBold.ttf');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-Regular.ttf');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-UltraBold.ttf');
-	font-weight: 800;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-Light.ttf');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-Black.ttf');
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Telegraf';
-	src: url('/fonts/Telegraf-UltraBold.ttf');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
+
 h1#form-heading {
     font-size: 25px !important;
 }
@@ -120,17 +86,19 @@ h1#form-heading {
 	word-wrap: break-word;
 }
 body {
-/*	font-family: Telegraf;
-	font-weight:;*/
+	font-family: 'Beatrice', sans-serif;
+}
+h1, h2, h3  {
+	font-family: 'Season', serif;
+	letter-spacing: 1.1px;
 }
 h1 {
-	font-family: Telegraf;
 	font-weight: 800;
 	font-size: 4rem;
 	margin-bottom: 2rem;
 }
 #position-title {
-    font-family: Telegraf;
+	font-family: 'Season', serif;
     font-weight: 800;
     font-size: 4rem;
 }
@@ -182,12 +150,12 @@ h2 {
 .carousel-item .d-flex {
 	width: 100%;
 }
-.carousel-control-prev-icon {
+/* .carousel-control-prev-icon {
 	background-image: url(https:
 }
 .carousel-control-next-icon {
 	background-image: url(https:
-}
+} */
 .carousel-control-next-icon, .carousel-control-prev-icon {
 	width: 40px;
 	height: 40px;
@@ -364,8 +332,8 @@ h2 {
 		flex: 0 0 80%;
 		margin-right: 20px;
 	}
-	.benefit-content {
-	}
+	/* .benefit-content {
+	} */
 }
 .process-content p {
 	margin-bottom: 0;
@@ -522,8 +490,8 @@ h2 {
 		margin-right: 0px;
 		padding-right: 0px;
 	}
-	.team-content {
-	}
+	/* .team-content {
+	} */
 }
 strong {
 	font-weight: 800;
