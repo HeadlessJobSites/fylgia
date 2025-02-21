@@ -257,10 +257,10 @@ button.carousel-control-prev {
 .carousel-control-prev-icon {
   filter: invert(1);
 }
-@media (max-width: 768px) {
 .process-content p {
     font-size: 0.8em;
 }
+@media (max-width: 768px) {
 .intro-header {
 	font-size: 1.3em !important;
 }
