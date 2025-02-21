@@ -258,6 +258,9 @@ button.carousel-control-prev {
   filter: invert(1);
 }
 @media (max-width: 768px) {
+.process-content p {
+    font-size: 0.8em;
+}
 .intro-header {
 	font-size: 1.3em !important;
 }
