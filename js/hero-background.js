@@ -43,7 +43,7 @@ function setHeroBackgroundVideo() {
         video.classList.add('hero-video');
 
         var source = document.createElement('source');
-        source.setAttribute('src', '/Compressed-3.mp4');
+        source.setAttribute('src', '/Rekryteringssida1.mp4');
         source.setAttribute('type', 'video/mp4');
 
         video.appendChild(source);
