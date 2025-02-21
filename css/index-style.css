@@ -622,7 +622,7 @@ a:hover {
 	}
 }
 @media (min-width: 992px) {
-	.talentech-section h2,.talentech-section p {
+	.talentech-section h2, .talentech-section h5, .talentech-section p {
 		padding-left: 100px;
 		padding-right: 150px;
 	}
