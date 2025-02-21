@@ -121,7 +121,10 @@ h1 {
 	font-size: 4rem;
 	margin-bottom: 2rem;
 }
-
+.healthy-place {
+    max-width: 60%;
+    margin: 0 auto;
+}
 .employee-name {
 	font-size: 1.7rem;
 	font-weight: 800
