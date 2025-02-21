@@ -131,65 +131,18 @@
             <p class="my-4 m-px-2">På Fylgia samlas drivna jurister som vill göra verklig skillnad. Det som förenar oss är övertygelsen om att vi når de bästa resultaten – och har som roligast – när vi arbetar tillsammans. Här utvecklas du i en miljö där hög kvalitet är en självklarhet och där du får utmana dig själv varje dag.</p>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const video = document.getElementById('talentechVideo');
-            const muteBtn = document.getElementById('muteBtn');
-            const muteIcon = muteBtn.querySelector('img');
 
-            // Function to toggle video play/pause
-            const togglePlayPause = () => {
-                if (video.paused || video.ended) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            };
-
-            // Setup Intersection Observer for autoplay/pause based on visibility
-            // This part will now work on all devices
-            const observer = new IntersectionObserver((entries) => {
-                const [entry] = entries;
-                if (entry.isIntersecting) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            }, {
-                root: null,
-                threshold: 0.5
-            });
-
-            observer.observe(video);
-
-            // Check if we are on desktop before adding event listeners for play/pause and mute controls
-            if (window.innerWidth > 992) {
-                // Click event for the video itself
-                video.addEventListener('click', () => {
-                    togglePlayPause();
-                });
-
-                // Event listener for the mute button
-                muteBtn.addEventListener('click', () => {
-                    video.muted = !video.muted;
-                    muteIcon.src = video.muted ? "/files/volume-xmark-thin.svg" : "/files/volume-off-thin.svg";
-                    muteIcon.alt = video.muted ? "Mute" : "Unmute";
-                });
-            }
-        });
-    </script>
-    <div class="talentech-section py-5 mb-5 m-mb-3 m-pt-0">
-        <div class="container pt-0 mb-5 pb-3 video-container m-my-0">
-            <video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
+<div class="talentech-section mb-5 pb-2 m-mb-3">
+    <div class="container mt-4 pt-2 mb-5 pb-3 video-container m-my-0">
+        <video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
             <source src="./files/Rekryteringssida1.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
+        </video><!--
         <div class="video-controls">
             <button id="muteBtn"><img src="./files/volume-xmark-thin.svg" alt="Mute"></button>
-        </div>
-            <!--<div class="front-image"><img src="./files/fylgia-lediga-jobb.jpg"></div>-->
-        </div>
+        </div>-->
     </div>
+</div>
     <section class="team-section mt-5 mb-2 pt-3 pb-5 m-my-0" id="meet-the-team" style="background-color: #f0f0f0;">
         <h2 class="container pt-5 mb-0 pb-0 m-px-4">Träffa <span class="title-alt">teamet</span></h2>
         <div class="container mt-0 pt-2 pb-5 m-px-0 m-pb-3">
@@ -206,9 +159,9 @@
             </h2>
             <p class="my-4 m-px-2"><strong>Väx och utvecklas tillsammans med oss</strong><br>Från dag ett vill vi ge dig möjlighet att växa och utvecklas som jurist. Vi har skapat en arbetsmiljö där du kan trivas, utmana dig själv och ständigt utvecklas – både personligt och professionellt. Hos oss får du ta ansvar och bidra till arbete som gör verklig skillnad.<br><br> Vi värdesätter en arbetsmiljö där du kan vara engagerad, prestigelös och ha nära till skratt. Tillsammans strävar vi efter de bästa resultaten och belönar både det dagliga arbetet och extraordinära insatser. Hos oss kan du påverka din karriär genom prestation. Genom hög kundnytta, kvalitet och affärsmässighet skapar vi framgång – både för våra klienter och vår byrå. Vi tror på lagarbete och hjälper varandra att nå nya höjder.</p>
             <p class="my-4 m-px-2"><strong>Utvecklingsmöjligheter</strong><br>Hos oss får du chansen att utvecklas genom att arbeta i olika verksamhetsgrupper och med varierande klientuppdrag. Du har möjlighet att påverka din karriär och vara med och forma framtiden vi bygger tillsammans – en miljö där du kan växa inom dina expertisområden och samtidigt utmana dig själv.</p>
-        <p class="my-4 m-px-2 front-image"><img src="./files/7a9613dd-9665-42f1-8c41-b1f3547cf711.jpg"></p>    
-	<p class="my-4 m-px-2"><strong>Karriärmodell</strong><br>Vi erbjuder en tydlig karriärväg – från sommarnotarie och juniorassistent till biträdande jurist, advokat och delägare. Hos oss får du möjlighet att avancera och forma din karriär i en miljö som värdesätter både kompetens och engagemang. Vår öppna delägarmodell gör det möjligt för skickliga rådgivare med rätt värderingar att bli delägare och vara med och utveckla byrån.</p>
-	<p class="my-4 m-px-2 front-image"><img src="./files/86c3f6de-4523-42e0-8971-c57d83b8efa2.jpg"></p>
+        <p class="my-4 m-px-2 front-image"><br><img src="./files/7a9613dd-9665-42f1-8c41-b1f3547cf711.jpg"></p>    
+	<p class="my-4 m-px-2"><br><strong>Karriärmodell</strong><br>Vi erbjuder en tydlig karriärväg – från sommarnotarie och juniorassistent till biträdande jurist, advokat och delägare. Hos oss får du möjlighet att avancera och forma din karriär i en miljö som värdesätter både kompetens och engagemang. Vår öppna delägarmodell gör det möjligt för skickliga rådgivare med rätt värderingar att bli delägare och vara med och utveckla byrån.</p>
+	<p class="my-4 m-px-2 front-image"><br><img src="./files/86c3f6de-4523-42e0-8971-c57d83b8efa2.jpg"></p>
         </div>
     </div>
 
@@ -284,7 +237,6 @@
                 <!-- Existing Content in Right Column -->
                 <div class="col-md-12 pl-5 m-px-4">
                     <div class="row process-row">
-                        <!-- Benefit 1 -->
                         <div class="col-md-4 col-sm-4 process-item">
                             <div class="process-icon">
                                 <h3>1</h3>
@@ -294,7 +246,6 @@
                                 <p>För att ansöka till en tjänst på Fylgia, ladda upp ditt uppdaterade CV, personliga brev och relevanta betyg direkt i vår ansökningsportal. Ditt personliga brev är en viktig del av din ansökan och ger dig möjlighet att beskriva vad som motiverar dig att söka tjänsten hos oss. Vi ser fram emot att läsa om dina erfarenheter och hur du kan bidra till vårt team på Fylgia.</p>
                             </div>
                         </div>
-                        <!-- Benefit 2 -->
                         <div class="col-md-4 col-sm-4 process-item">
                             <div class="process-icon">
                                 <h3>2</h3>
@@ -304,7 +255,6 @@
                                 <p>När vi har mottagit din ansökan gör vårt rekryteringsteam en noggrann granskning för att säkerställa att dina kunskaper, erfarenheter och kompetenser matchar de krav och kvalifikationer vi söker. I detta första urval bedömer vi din passform för rollen och identifierar de kandidater som har störst potential att bidra till Fylgias framgång. För att ytterligare bedöma din passform för rollen kan vissa kandidater bli inbjudna att genomföra rekryteringstester. Dessa tester, som kan inkludera både färdighetsbedömningar och personlighetsanalyser, hjälper oss att förstå dina styrkor och hur du skulle passa i rollen.</p>
                             </div>
                         </div>
-                        <!-- Benefit 3 -->
                         <div class="col-md-4 col-sm-4 process-item">
                             <div class="process-icon">
                                 <h3>3</h3>
@@ -314,7 +264,6 @@
                                 <p>För de kandidater som går vidare till nästa steg i rekryteringsprocessen kommer vi att genomföra en eller flera intervjuer. Intervjun kan vara både personlig och/eller digital, beroende på vilken tjänst du söker och din geografiska placering. Under intervjun får vi möjlighet att lära känna dig bättre, förstå din erfarenhet och kompetens, samt diskutera dina ambitioner.</p>
                             </div>
                         </div>
-                        <!-- Benefit 4 -->
                         <div class="col-md-4 col-sm-4 process-item">
                             <div class="process-icon">
                                 <h3>4</h3>
@@ -324,7 +273,6 @@
                                 <p>Efter avslutad intervju kontaktar vi dina referenser för att få en djupare förståelse av din erfarenhet och arbetsstil. Genom samtal med tidigare arbetsgivare eller akademiska handledare får vi en mer heltäckande bild av dig som kandidat och ytterligare underlag i vår bedömning av din passform för rollen.</p>
                             </div>
                         </div>
-                        <!-- Benefit 5 -->
                         <div class="col-md-4 col-sm-4 process-item">
                             <div class="process-icon">
                                 <h3>5</h3>
@@ -334,7 +282,6 @@
                                 <p>Efter referenstagningen blir du inbjuden till ett möte med vårt rekryteringsteam. Där får du träffa några av våra delägare och biträdande jurister och lära känna vår verksamhet bättre. Det är också ett utmärkt tillfälle att ställa frågor om rollen, vårt arbetssätt och hur det är att arbeta på Fylgia.</p>
                             </div>
                         </div>
-                        <!-- Benefit 6 -->
                         <div class="col-md-4 col-sm-4 process-item">
                             <div class="process-icon">
                                 <h3>6</h3>
@@ -410,11 +357,11 @@
     </a>
 </div>
 -->
+	<!--
     <section class="benefits-section my-5 pb-4 m-pb-0 m-pt-4 m-mt-0">
         <h2 class="container pt-5 m-pt-4 m-px-4 m-pb-2">Några av våra <span class="title-alt">fördelar</span></h2>
         <div class="container">
             <div class="row">
-                <!-- Benefit 1 -->
                 <div class="col-md-3 col-sm-4 benefit-item">
                     <div class="benefit-icon">
                         <i class="fa-solid fa-display-code"></i>
@@ -424,7 +371,6 @@
                         <p>Du får nödvändig utrustning till ditt hemmakontor</p>
                     </div>
                 </div>
-                <!-- Benefit 2 -->
                 <div class="col-md-3 col-sm-4 benefit-item">
                     <div class="benefit-icon">
                         <i class="fa-solid fa-notes-medical"></i>
@@ -434,7 +380,6 @@
                         <p>Hälsobidrag för gymmedlemskap m.m</p>
                     </div>
                 </div>
-                <!-- Benefit 3 -->
                 <div class="col-md-3 col-sm-4 benefit-item">
                     <div class="benefit-icon">
                         <i class="fa-solid fa-laptop"></i>
@@ -444,7 +389,6 @@
                         <p>Välj din föredragna arbetsutrustning</p>
                     </div>
                 </div>
-                <!-- Benefit 4 -->
                 <div class="col-md-3 col-sm-4 benefit-item">
                     <div class="benefit-icon">
                         <i class="fa-solid fa-map-location-dot"></i>
@@ -454,7 +398,6 @@
                         <p>Njut av ytterligare semesterdagar utöver marknadens normer</p>
                     </div>
                 </div>
-                <!-- Benefit 5 -->
                 <div class="col-md-3 col-sm-4 benefit-item">
                     <div class="benefit-icon">
                         <i class="fa-solid fa-pot-food"></i>
@@ -464,7 +407,6 @@
                         <p>Rabatt på luncher – betalas av oss!</p>
                     </div>
                 </div>
-                <!-- Benefit 6 -->
                 <div class="col-md-3 col-sm-4 benefit-item">
                     <div class="benefit-icon">
                         <i class="fa-solid fa-house-building"></i>
@@ -474,7 +416,6 @@
                         <p>Arbeta både från våra fina kontor samt distans</p>
                     </div>
                 </div>
-                <!-- Benefit 7 -->
                 <div class="col-md-3 col-sm-6 benefit-item">
                     <div class="benefit-icon">
                         <i class="fa-solid fa-dog"></i>
@@ -487,6 +428,15 @@
             </div>
         </div>
     </section>
+	-->
+<div class="talentech-section py-5 my-5 m-pt-2" id="company-section">
+        <div class="container pt-4 m-mt-2">
+            <h2 class="m-px-2 intro-header">Våra medarbetare är <span class="mt-2 title-alt">vår viktigaste tillgång</span>
+            </h2>
+            <p class="my-4 m-px-2">Som ett led i vårt arbete för att förebygga ohälsa på arbetsplatsen har vi mottagit utmärkelsen “Healthy Place to Work” från OneLab, ett av de ledande företagen inom preventiv och företagshälsovård. Våra medarbetare är vår främsta tillgång, och därför är det viktigt för oss att aktivt arbeta för att skapa en hållbar arbetsmiljö där alla kan trivas och utvecklas långsiktigt.</p>
+        <p class="my-4 m-px-2 front-image"><br><img src="./files/bf11f2ef-109a-4ef6-a183-044fca7f41cc.png"></p>    
+        </div>
+</div>
     <div class=" mt-5">
         <div id="mapid" style="height: 500px; overflow: hidden;"></div>
     </div>
