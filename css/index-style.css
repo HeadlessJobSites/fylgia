@@ -203,8 +203,8 @@ h2 {
 	background-image: url(https:
 } */
 .carousel-control-next-icon, .carousel-control-prev-icon {
-	width: 40px;
-	height: 40px;
+	width: 25px;
+	height: 25px;
 }
 .carousel-control-prev, .carousel-control-next {
 	width: 5%;
