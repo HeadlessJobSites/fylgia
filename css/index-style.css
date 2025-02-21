@@ -245,6 +245,17 @@ h2 {
 	height: 450px;
 	display: block;
 }
+.carousel-item {
+  transition: transform 0.1s ease-in-out;
+}
+button.carousel-control-prev {
+    border: 0;
+    background: transparent;
+}
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
 @media (max-width: 768px) {
 .intro-header {
 	font-size: 1.3em !important;
