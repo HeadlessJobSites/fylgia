@@ -306,6 +306,10 @@ button.carousel-control-prev {
 .process-content p {
     font-size: 0.8em;
 }
+@media (max-width: 768px) {
+	.intro-header {
+		font-size: 2.125rem !important;
+	}
 .navbar-brand img {
     height: 25px;
 }
@@ -334,7 +338,7 @@ button.carousel-control-prev {
 	#position-title {
     font-size: 2rem;
 }
-
+}
 .bg-light {
 	background-color: #ebeae5;
 }
