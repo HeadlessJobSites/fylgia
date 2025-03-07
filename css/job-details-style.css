@@ -88,9 +88,9 @@ h1#form-heading {
 body {
 	font-family: 'Beatrice', sans-serif;
 }
-h1, h2, h3  {
+h1, h2, h3, h4  {
 	font-family: 'Season', serif;
-	letter-spacing: 1.1px;
+	letter-spacing: .01em;
 }
 h1 {
 	font-weight: 800;
