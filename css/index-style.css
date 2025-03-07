@@ -391,9 +391,10 @@ button.carousel-control-prev {
 	letter-spacing: 0.02em;
 }
 .blockquote-footer {
-	color: #f8f9fa;
+	color: #000000;
 	font-size: 1.125rem;
 }
+
 .benefits-section .container {
 	max-width: 1200px;
 }
