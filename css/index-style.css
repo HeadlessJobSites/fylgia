@@ -193,9 +193,9 @@ h5 {
 	margin-block-end: 6rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	.margin-row-bottom {
-		margin-block-end: 4rem;
+		margin-block-end: 3rem;
 	}
 }
 
