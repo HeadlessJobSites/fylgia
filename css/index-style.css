@@ -118,7 +118,13 @@ a {
 body {
 	font-family: 'Beatrice', sans-serif;
 	background-color: #fffefa;
-	font-size: 1.125rem;
+	font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 1.125rem;
+	}
 }
 
 .work-at-company {
@@ -175,15 +181,7 @@ h5 {
     	border-radius: 0px;
 	margin-top: 20px;
 }
-h2 {
-	font-size: 2.5rem;
-	margin-block-end: 2rem;
-}
-@media (max-width: 768px) {
-	h2 {
-		font-size: 2.125rem !important;
-	}
-}
+
 .background-image {
 	background-size: cover;
 	background-position: 25% 20%;
@@ -191,10 +189,28 @@ h2 {
     	/*border-radius: 8px 40px 0 0;*/
 }
 
+.margin-row-bottom {
+	margin-block-end: 6rem;
+}
+
+@media (max-width: 768px) {
+	.margin-row-bottom {
+		margin-block-end: 4rem;
+	}
+}
+
+
 .feature-title {
 	font-size: 2.5rem;
 	line-height: 130%;
 	letter-spacing: .01em;
+	margin-block-end: 1.5rem;
+}
+@media (max-width: 768px) {
+	.feature-title {
+		font-size: 2rem;
+		margin-block-end: 1rem;
+	}
 }
 
 .padding-text-right {
@@ -213,6 +229,11 @@ h2 {
 	.padding-text-left {
 		padding-left: 15px;
 	}
+}
+
+.registration-btn,
+.load-more-btn {
+	margin-block-start: 2rem;
 }
 
 .team-member {
@@ -306,10 +327,26 @@ button.carousel-control-prev {
 .process-content p {
     font-size: 0.8em;
 }
+.section-header {
+	font-size: 3rem;
+	margin-block-end: 3rem;
+}
+
+@media (max-width: 768px) {
+	.section-header {
+		font-size: 2.125rem !important;
+		margin-block-end: 2rem;
+	}
+}
+
+.intro-header {
+	font-size: 4.5rem;
+}
 @media (max-width: 768px) {
 	.intro-header {
-		font-size: 2.125rem !important;
+		font-size: 2.5rem !important;
 	}
+
 .navbar-brand img {
     height: 25px;
 }
@@ -348,13 +385,23 @@ button.carousel-control-prev {
 	height: auto;
 }
 .carousel-item {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
 }
 .container {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-block: 1.25rem;
 }
+
+.section-container {
+	padding-block: 4rem;
+}
+
+@media (max-width: 768px) {
+	.section-container {
+		padding-block: 2rem;
+	}
+}
+
 #simpleCarousel .carousel-control-prev, #simpleCarousel .carousel-control-next {
 	width: auto;
 	top: 50%;
