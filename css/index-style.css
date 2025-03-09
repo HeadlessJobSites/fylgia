@@ -118,12 +118,12 @@ a {
 body {
 	font-family: 'Beatrice', sans-serif;
 	background-color: #fffefa;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 }
 
 @media (max-width: 768px) {
 	body {
-		font-size: 1.125rem;
+		font-size: 1rem;
 	}
 }
 
@@ -340,7 +340,7 @@ button.carousel-control-prev {
 }
 
 .intro-header {
-	font-size: 4.5rem;
+	font-size: 4rem;
 }
 @media (max-width: 768px) {
 	.intro-header {
