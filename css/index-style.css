@@ -199,6 +199,12 @@ h5 {
 	}
 }
 
+.feature-section {
+	padding-block: 1.5rem;
+}
+.feature-info {
+	margin-block-end: 6rem;
+}
 
 .feature-title {
 	font-size: 2.5rem;
