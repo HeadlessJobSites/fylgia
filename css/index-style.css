@@ -199,9 +199,12 @@ h5 {
 	}
 }
 
-.feature-section {
-	/* padding-block: 1.5rem; */
+@media (min-width: 768px) {
+	.feature-section .section-container {
+		padding-block-end: 5.875rem;
+	}
 }
+
 .feature-info {
 	margin-block-end: 6rem;
 }
