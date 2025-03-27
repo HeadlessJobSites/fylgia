@@ -21,16 +21,16 @@
 }
 p {
   line-height: 160%;
-	letter-spacing: .02em;
+	letter-spacing: .02rem;
 }
 
 a {
   line-height: 160%;
-	letter-spacing: .02em;
+	letter-spacing: .02rem;
 }
 
 .navbar-brand img {
-    height: 50px;
+    height: 40px;
 }
 .leaflet-container a.leaflet-popup-close-button {
     padding: 8px 8px 0 0 !important;
@@ -133,7 +133,7 @@ body {
 
 h1, h2, h3, h4, h5  {
 	font-family: 'Season', serif;
-	letter-spacing: .02em;
+	letter-spacing: .02rem;
 }
 
 h1 {
@@ -200,7 +200,7 @@ h5 {
 }
 
 .feature-section {
-	padding-block: 1.5rem;
+	/* padding-block: 1.5rem; */
 }
 .feature-info {
 	margin-block-end: 6rem;
@@ -209,7 +209,7 @@ h5 {
 .feature-title {
 	font-size: 2.5rem;
 	line-height: 130%;
-	letter-spacing: .01em;
+	letter-spacing: .01rem;
 	margin-block-end: 1.5rem;
 }
 @media (max-width: 768px) {
@@ -401,6 +401,7 @@ button.carousel-control-prev {
 	padding-block: 1.25rem;
 }
 
+
 .section-container {
 	padding-block: 4rem;
 }
@@ -444,7 +445,7 @@ button.carousel-control-prev {
 	font-size: 1.8rem;
 	font-weight: 480;
 	line-height: 1.4;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.02rem;
 }
 .blockquote-footer {
 	color: #000000;
