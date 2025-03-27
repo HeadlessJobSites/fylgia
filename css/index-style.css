@@ -931,6 +931,13 @@ a.nav-link.btn.btn-primary.apply-btn {
 .navbar.bg-dark .container {
     padding: 0;
 }
+
+@media (min-width: 1300px) {
+	.navbar .container {
+    max-width: 1300px;
+ }
+}
+
    .navbar.bg-dark .navbar-nav {
         background: transparent;
         border-radius: 0px;
