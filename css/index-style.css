@@ -337,7 +337,8 @@ button.carousel-control-prev {
   filter: invert(1);
 }
 .process-content p {
-    font-size: 0.8em;
+    font-size: 0.9rem;
+		letter-spacing: 0.04rem;
 }
 .section-header {
 	font-size: 3rem;
