@@ -200,7 +200,7 @@ h5 {
 }
 
 @media (min-width: 768px) {
-	.feature-section .section-container {
+	.section-container.opportunities-container {
 		padding-block-end: 5.875rem;
 	}
 }
@@ -413,6 +413,10 @@ button.carousel-control-prev {
 @media (max-width: 768px) {
 	.section-container {
 		padding-block: 2rem;
+	}
+	.section-container.feature-container,
+	.section-container.registration-container {
+		padding-block-end: 3rem;
 	}
 }
 
