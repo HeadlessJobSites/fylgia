@@ -337,8 +337,8 @@ button.carousel-control-prev {
   filter: invert(1);
 }
 .process-content p {
-    font-size: 0.9rem;
-		letter-spacing: 0.04rem;
+    font-size: 14px;
+		letter-spacing: 0.02rem;
 }
 .section-header {
 	font-size: 3rem;
@@ -686,6 +686,15 @@ button.carousel-control-prev {
 	/* .team-content {
 	} */
 }
+
+@media (max-width: 440px) {
+	.team-item, .process-item {
+		flex: 0 0 80%;
+		margin-right: 0px;
+		padding-right: 0px;
+	}
+} 
+
 strong {
 	font-weight: 800;
 }
