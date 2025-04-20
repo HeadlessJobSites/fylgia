@@ -815,3 +815,7 @@ a.nav-link.new-link {
         display: none !important;
     }
 }
+
+.section-container {
+	padding-block: 4rem;
+}
