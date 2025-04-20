@@ -100,6 +100,7 @@ h1 {
 #position-title {
 	font-family: 'Season', serif;
   font-size: 4rem;
+	font-weight: 800;
 	letter-spacing: 0.02rem;
 }
 .btn-primary {
