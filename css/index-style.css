@@ -344,6 +344,10 @@ button.carousel-control-prev {
 	margin-block-end: 3rem;
 }
 
+.section-header.appform-title {
+	margin-block-end: 0;
+}
+
 @media (max-width: 768px) {
 	.section-header {
 		font-size: 2.125rem !important;
