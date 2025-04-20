@@ -400,6 +400,13 @@ h2 {
 	line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  .job-description {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 
 .job-description h3,.job-description h4,.job-description h5,.job-description h6,.job-description h2 {
 	font-size: 1.1rem;
