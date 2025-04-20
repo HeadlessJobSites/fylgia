@@ -875,12 +875,12 @@
                 const job = markerObj.jobs[markerObj.jobIndex];
                 let popupContent = `
                 <div style="background-color: #fff; color: #000; padding: 30px 30px 30px 30px; border-radius: 0;">
-                    <a href="${job.url}" style="font-size: large; color: #000; text-decoration: none;">${job.title}</a>
-                    <div style="margin-top: 10px;">
+                    <a href="${job.url}" style="font-family: 'Season', serif; font-size: large; color: #000; text-decoration: none;">${job.title}</a>
+                    <div style="margin-top: 10px; font-family: 'Beatrice', sans-serif;">
                         <span style="">Sted:</span> <span>${job.location}</span>
                     </div>
                     <div style="display: flex; justify-content: flex-start; margin-top: 20px;">
-                        <a href="${job.url}" style="background-color: #B497FF; color: #1B1B1F; padding: 10px 15px; text-decoration: none; font-weight: 600; ">Se jobb</a>
+                        <a href="${job.url}" style="background-color: #B497FF; color: #1B1B1F; padding: 10px 15px; text-decoration: none; font-family: 'Beatrice', sans-serif; font-weight: 600; ">Se jobb</a>
                     </div>
                     ${markerObj.jobs.length > 1 ? `
                     <div style="display: flex; justify-content: space-between; margin-top: 15px;">
