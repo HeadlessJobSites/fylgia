@@ -818,3 +818,9 @@ a.nav-link.new-link {
 .section-container {
 	padding-block: 4rem;
 }
+
+@media (max-width: 768px) {
+	.section-container {
+			padding-block: 2rem;
+	}
+}
