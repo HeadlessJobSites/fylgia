@@ -649,7 +649,9 @@ font-size: 1.8rem;
 }
 
 
-
+.apply_page {
+	background-color: #FFFEFA !important;
+}
 
 
 .modal-fullscreen-90w {

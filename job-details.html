@@ -411,7 +411,7 @@
         </div>
     </section>
 
-    <section class="process-section mb-5 m-my-0 m-pt-0 m-pb-4" style="background-color: #FFFEFA;">
+    <section class="process-section mb-5 m-my-0 m-pt-0 m-pb-4" style="background-color: #fffefa;">
         <h2 id="appform-header" class="container pt-5 m-px-3 m-pb-2" id="appFormWrapper"><span>Anmälnings&shy;formulär</span></h2>
         <!-- Application form or alternative message -->
         <div id="originalContentContainer">
@@ -469,7 +469,7 @@
         }, false);
     </script>
 
-    <div id="tt-feature-section" class="feature-section mb-5 pt-3 pb-5 m-mb-0" id="jobs-anchor" style="background-color: #EBEAE5;">
+    <div id="tt-feature-section" class="feature-section py-5 pt-3 pb-5 m-mb-0" id="jobs-anchor" style="background-color: #f6f5ee;">
         <div class="container mt-3 mb-5 m-mb-0">
             <h2 class="my-5 m-my-0">Liknande <span>jobb</span></h2>
             <div class="row my-3">
@@ -496,46 +496,46 @@
     </div>
 
 
-
-    <div class="container my-5 py-5 m-my-0" style="text-align: center;">
-        <div class="registration-top">
-            <h2 class="section-header registration-title">Hittar du ingen tjänst som matchar din profil?</h2>
-            <div class="registration-text" style="max-width: 600px; margin: auto;">
-                <p>Prenumerera på lediga jobb och få e-postaviseringar när nya jobbannonser publiceras.</p>
+    <section class="registration-section py-5" style="background-color: #EBEAE5;">
+        <div class="container py-5 m-my-0" style="text-align: center;">
+            <div class="registration-top">
+                <h2 class="section-header registration-title">Hittar du ingen tjänst som matchar din profil?</h2>
+                <div class="registration-text" style="max-width: 600px; margin: auto;">
+                    <p>Prenumerera på lediga jobb och få e-postaviseringar när nya jobbannonser publiceras.</p>
+                </div>
             </div>
-        </div>
-        <a href="https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1677&ProjectId=143570&DepartmentId=18956&MediaId=5" class="mb-5 btn btn-primary" style="font-weight:800"><span class="btn-arrow">Spontanansökan</span></a>
-        <div class="registration-text" style="max-width: 600px; margin: auto;">
-            <p>Du kan även registrera dig och prenumerera för att få information om våra lediga tjänster direkt till din e-post.</p>
-        </div>
-        <button id="agent" class="btn btn-primary" style="font-weight:800">Prenumerera</button>
-        <div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" id="closeModalButton" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <iframe id="modalIframe" src="" style="border: none; width: 100%; height: 450px;"></iframe>
+            <a href="https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1677&ProjectId=143570&DepartmentId=18956&MediaId=5" class="mb-5 btn btn-primary" style="font-weight:800"><span class="btn-arrow">Spontanansökan</span></a>
+            <div class="registration-text" style="max-width: 600px; margin: auto;">
+                <p>Du kan även registrera dig och prenumerera för att få information om våra lediga tjänster direkt till din e-post.</p>
+            </div>
+            <button id="agent" class="btn btn-primary" style="font-weight:800">Prenumerera</button>
+            <div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" id="closeModalButton" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe id="modalIframe" src="" style="border: none; width: 100%; height: 450px;"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                document.getElementById('agent').addEventListener('click', function () {
-                    var iframeUrl = "https://web103.reachmee.com/ext/I010/2500/subscribe?site=7&lang=SE&validator=01f5c8c8781b5095cf003ac77fc99e54";
-                    document.getElementById('modalIframe').src = iframeUrl;
-                    $('#exampleModal').modal('show');
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    document.getElementById('agent').addEventListener('click', function () {
+                        var iframeUrl = "https://web103.reachmee.com/ext/I010/2500/subscribe?site=7&lang=SE&validator=01f5c8c8781b5095cf003ac77fc99e54";
+                        document.getElementById('modalIframe').src = iframeUrl;
+                        $('#exampleModal').modal('show');
+                    });
                 });
-            });
-        </script>
+            </script>
 
-    </div>
-
+        </div>
+    </section>
 
 
     <section class="text-center bg-dark text-light py-5">
