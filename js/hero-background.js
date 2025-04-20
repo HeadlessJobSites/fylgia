@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const params = new URLSearchParams(window.location.search);
         const jobId = parseInt(params.get('rmjob') || params.get('jobId')); 
 
-        fetch('https://api.talentech.io/reachmee/feed/lkf') 
+        fetch('https://api.talentech.io/reachmee/feed/fylgia') 
             .then(response => response.json())
             .then(jobs => {
                 const job = jobs.find(job => job.ad_id === jobId);
@@ -43,7 +43,7 @@ function setHeroBackgroundVideo() {
         video.classList.add('hero-video');
 
         var source = document.createElement('source');
-        source.setAttribute('src', '/Rekryteringssida1.mp4');
+        source.setAttribute('src', '/Rekryteringssida2.mp4');
         source.setAttribute('type', 'video/mp4');
 
         video.appendChild(source);
