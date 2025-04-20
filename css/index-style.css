@@ -349,6 +349,9 @@ button.carousel-control-prev {
 		font-size: 2.125rem !important;
 		margin-block-end: 2rem;
 	}
+	.section-header.appform-title {
+		margin-block-end: 0;
+	}
 }
 
 .intro-header {
