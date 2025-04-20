@@ -511,6 +511,11 @@ h2 {
 	/* .team-content {
 	} */
 }
+@media (max-width: 440px) {
+	.team-item, .process-item {
+			flex: 0 0 80%;
+	}
+}
 strong {
 	font-weight: 800;
 }
