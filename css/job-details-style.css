@@ -99,12 +99,16 @@ h1 {
 }
 #position-title {
 	font-family: 'Season', serif;
-    font-weight: 800;
-    font-size: 4rem;
+  font-size: 4rem;
+	letter-spacing: 0.02rem;
 }
 .btn-primary {
+	background-color: #B497FF;
+	color: #1B1B1F;
 	border: 0;
-	padding: 0.6rem 1.5rem;
+	border-radius: 0px;
+    padding: 0.6rem 2.5rem;
+    padding-bottom: 0.8rem;
 }
 .nav-link {
 	font-size: 1.1rem;
@@ -389,6 +393,14 @@ h2 {
 .process-icon i {
 	font-size: 2rem;
 }
+
+.job-description {
+	padding-left: 210px;
+	padding-right: 260px;
+	line-height: 1.6;
+}
+
+
 .job-description h3,.job-description h4,.job-description h5,.job-description h6,.job-description h2 {
 	font-size: 1.1rem;
 	font-weight: 800;
@@ -576,6 +588,10 @@ a:hover {
     font-size: 16px;
     padding: 10px 20px;
     font-weight: bold;
+}
+
+.apply-btn:hover {
+ color: #ffffff !important;
 }
 @media (min-width: 768px) {
 	.job-info {
