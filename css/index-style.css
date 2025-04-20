@@ -411,7 +411,7 @@ button.carousel-control-prev {
 
 @media (max-width: 768px) {
 	.section-container {
-		padding-block: 2rem;
+		padding-block: 3rem;
 	}
 	.section-container.feature-container,
 	.section-container.registration-container {
