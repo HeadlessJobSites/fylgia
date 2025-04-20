@@ -523,6 +523,13 @@ a:hover {
 	text-decoration: none;
 	text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+	.talentech-section .container {
+		padding-top: 0;
+	}
+}
+
 .stretched-link {
 	position: absolute;
 	right: 20px;
