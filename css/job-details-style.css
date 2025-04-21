@@ -836,8 +836,3 @@ a.nav-link.new-link {
 			padding-block: 3rem;
 	}
 }
-
-body.modal-open {
-	padding-right: 0 !important;
-}
-
