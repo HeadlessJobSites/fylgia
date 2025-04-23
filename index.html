@@ -100,7 +100,8 @@
             fetch('https://api.talentech.io/reachmee/feed/fylgia')
                 .then(response => response.json())
                 .then(jobs => {
-                    const positionsCount = jobs.length; // Get the count of jobs from the feed
+                    const filteredJobs = jobs.filter(job => job.ad_id !== 6);
+                    const positionsCount = filteredJobs.length; // Get the count of jobs from the feed
                     const btnText = positionsCount === 1 ? 'Se 1 ledig tjänst' : `Se ${positionsCount} lediga tjänster`; // Update button text based on count
                     document.querySelector('.hero-section .btn-arrow').textContent = positionsCount > 0 ? btnText : 'Se lediga tjänster';
                 })
