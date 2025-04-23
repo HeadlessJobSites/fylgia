@@ -892,6 +892,14 @@
                 document.querySelectorAll('a[href*="jobId=6"]').forEach(btn => {
                     btn.style.display = 'none';
                 });
+
+                const registrationSection = document.querySelector('.registration-section');
+                if (registrationSection) {
+                    const topText = registrationSection.querySelector('.registration-top');
+                    if (topText) {
+                        topText.style.display = 'none';
+                    }
+                }
             }
         });
     </script>
