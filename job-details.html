@@ -504,7 +504,7 @@
                     <p>Skicka in en spontanansökan så sparar vi din information för framtida möjligheter.</p>
                 </div>
             </div>
-            <a href="https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1677&ProjectId=143570&DepartmentId=18956&MediaId=5" class="mb-5 btn btn-primary" style="font-weight:800"><span class="btn-arrow">Spontanansökan</span></a>
+            <a href="https://headlessjobsites.github.io/fylgia/job-details.html?jobId=6" class="mb-5 btn btn-primary" style="font-weight:800"><span class="btn-arrow">Spontanansökan</span></a>
             <div class="registration-text" style="max-width: 600px; margin: auto;">
                 <p>Prenumerera på lediga jobb och få e-postaviseringar när nya jobbannonser publiceras.</p>
             </div>
@@ -720,7 +720,7 @@
                 fetch('https://api.talentech.io/reachmee/feed/fylgia')
                     .then(response => response.json())
                     .then(data => {
-                        jobs = data.filter(job => job.ad_id !== parseInt(currentJobId));
+                        jobs = data.filter(job => job.ad_id !== parseInt(currentJobId) && job.ad_id !== 6);
                         if (jobs.length === 0) {
                             $('#tt-feature-section').hide();
                         } else {
