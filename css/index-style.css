@@ -2,31 +2,210 @@
 /* Typography          */
 /* ------------------- */
 
-/* fylgia body text */
+/* =======================
+   SeasonSans
+   ======================= */
+
+/* Variable font */
 @font-face {
-	font-family: 'Beatrice';
-	src: url('../fonts/Regular.ttf');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+  font-family: 'SeasonSans';
+  src: url('../fonts/VF/SeasonSansVF.woff2') format('woff2-variations'),
+       url('../fonts/VF/SeasonSansVF.woff') format('woff-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* fylgia headings */
+/* Fallback WEB versions */
 @font-face {
-	font-family: 'Season';
-	src: url('../fonts/SeasonSerif-Regular.ttf');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+  font-family: 'SeasonSans';
+  src: url('../fonts/WEB/SeasonSans-Light.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: 'SeasonSans';
+  src: url('../fonts/WEB/SeasonSans-Regular.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonSans';
+  src: url('../fonts/WEB/SeasonSans-Medium.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonSans';
+  src: url('../fonts/WEB/SeasonSans-SemiBold.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonSans';
+  src: url('../fonts/WEB/SeasonSans-Bold.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonSans';
+  src: url('../fonts/WEB/SeasonSans-Heavy.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSans-Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* =======================
+   SeasonMix
+   ======================= */
+
+/* Variable font */
+@font-face {
+  font-family: 'SeasonMix';
+  src: url('../fonts/VF/SeasonMixVF.woff2') format('woff2-variations'),
+       url('../fonts/VF/SeasonMixVF.woff') format('woff-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallback WEB versions */
+@font-face {
+  font-family: 'SeasonMix';
+  src: url('../fonts/WEB/SeasonMix-Light.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonMix-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonMix';
+  src: url('../fonts/WEB/SeasonMix-Regular.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonMix-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonMix';
+  src: url('../fonts/WEB/SeasonMix-Medium.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonMix-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonMix';
+  src: url('../fonts/WEB/SeasonMix-SemiBold.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonMix-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonMix';
+  src: url('../fonts/WEB/SeasonMix-Bold.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonMix-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonMix';
+  src: url('../fonts/WEB/SeasonMix-Heavy.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonMix-Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* =======================
+   SeasonSerif
+   ======================= */
+
+/* Variable font */
+@font-face {
+  font-family: 'SeasonSerif';
+  src: url('../fonts/VF/SeasonSerifVF.woff2') format('woff2-variations'),
+       url('../fonts/VF/SeasonSerifVF.woff') format('woff-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallback WEB versions */
+@font-face {
+  font-family: 'SeasonSerif';
+  src: url('../fonts/WEB/SeasonSerif-Light.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSerif-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonSerif';
+  src: url('../fonts/WEB/SeasonSerif-Regular.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSerif-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonSerif';
+  src: url('../fonts/WEB/SeasonSerif-Medium.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSerif-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonSerif';
+  src: url('../fonts/WEB/SeasonSerif-SemiBold.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSerif-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonSerif';
+  src: url('../fonts/WEB/SeasonSerif-Bold.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSerif-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SeasonSerif';
+  src: url('../fonts/WEB/SeasonSerif-Heavy.woff2') format('woff2'),
+       url('../fonts/WEB/SeasonSerif-Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 p {
   line-height: 160%;
-	letter-spacing: .02rem;
+	letter-spacing: 0.025rem;
 }
 
 a {
   line-height: 160%;
-	letter-spacing: .02rem;
+	letter-spacing: 0.025rem;
 }
 
 .navbar-brand img {
@@ -48,7 +227,7 @@ a {
 }
 .title-alt {
 	/*color: #8f53f0;*/
-	font-weight: 800;
+	font-weight: 600;
 }
 .front-image img {
 	width: 100%;
@@ -116,9 +295,11 @@ a {
 	word-wrap: break-word;
 }
 body {
-	font-family: 'Beatrice', sans-serif;
+	font-family: 'SeasonSans', sans-serif;
 	background-color: #fffefa;
-	font-size: 1.125rem;
+	font-size: 1.25rem;
+	font-weight: 480;
+	letter-spacing: 0.025rem;
 }
 
 @media (max-width: 768px) {
@@ -132,13 +313,13 @@ body {
 }
 
 h1, h2, h3, h4, h5  {
-	font-family: 'Season', serif;
-	letter-spacing: .02rem;
+	font-family: 'SeasonSerif', serif;
+	font-weight: 430;
+	letter-spacing: 0.03rem;
 }
 
 h1 {
-	font-family: 'Season',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-	font-weight: 400;
+	font-family: 'SeasonSerif',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	font-size: 4rem;
 	margin-bottom: 2rem;
 }
@@ -151,7 +332,7 @@ h5 {
 }
 .employee-name {
 	font-size: 1.7rem;
-	font-weight: 800
+	font-weight: 600
 }
 .square-video {
     width: 100%;
@@ -167,13 +348,20 @@ h5 {
 	border: 0;
 	border-radius: 0px;
   padding: 0.7rem 2.5rem;
+	font-size: 1.125rem;
+	font-weight: 650;
 }
 .btn-primary:hover {
 	background-color: #1B1B1F;
 	border-color: #1B1B1F;
 }
+
+.btn-lg {
+	font-size: 1.45rem;
+}
+
 .nav-link {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
 .rounded-img {
 	width: 100%;
@@ -211,7 +399,6 @@ h5 {
 .feature-title {
 	font-size: 2.5rem;
 	line-height: 130%;
-	letter-spacing: .01rem;
 	margin-block-end: 1.5rem;
 }
 @media (max-width: 768px) {
@@ -336,8 +523,9 @@ button.carousel-control-prev {
   filter: invert(1);
 }
 .process-content p {
-    font-size: 14px;
-		letter-spacing: 0.02rem;
+    font-size: 1rem;
+		letter-spacing: 0.025rem;
+		font-weight: 480;
 }
 .section-header {
 	font-size: 3rem;
@@ -456,14 +644,14 @@ button.carousel-control-prev {
 	margin: auto;
 }
 .blockquote p {
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-weight: 480;
 	line-height: 1.4;
-	letter-spacing: 0.02rem;
+	letter-spacing: 0.025rem;
 }
 .blockquote-footer {
 	color: #000000;
-	font-size: 1.125rem;
+	font-size: 1.25rem;
 }
 
 .benefits-section .container {
@@ -583,7 +771,7 @@ button.carousel-control-prev {
 .process-icon p, .process-icon h3 {
 	font-size: 4.5rem;
 	position: absolute;
-	font-weight: 700;
+	font-weight: 600;
 }
 .process-icon img {
 	width: 25px;
@@ -594,7 +782,7 @@ button.carousel-control-prev {
 }
 .job-description h3,.job-description h4,.job-description h5,.job-description h6,.job-description h2 {
 	font-size: 1.1rem;
-	font-weight: 800;
+	font-weight: 600;
 }
 .job-description p {
 	text-align: left !important;
@@ -707,7 +895,7 @@ button.carousel-control-prev {
 } 
 
 strong {
-	font-weight: 800;
+	font-weight: 600;
 }
 a:hover {
 	color: #0056b3;
@@ -745,7 +933,7 @@ a:hover {
 	padding: 1.75rem;
 }
 #loadMore {
-	font-weight: 800;
+	font-weight: 600;
 }
 .bg-dark {
 	background-color: #1B1B1F !important;
@@ -773,7 +961,7 @@ a:hover {
     line-height: 1.6;
 }
 #jobTitle {
-	font-weight: 800;
+	font-weight: 600;
 }
 .job-section {
 	background-color: #f8f9fa;
@@ -920,7 +1108,7 @@ font-size: 1.8rem;
 }
 .process-section .process-content h3 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 450;
 		margin-bottom: 1.2rem;
 }
 .card-title {
