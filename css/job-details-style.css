@@ -566,11 +566,20 @@ h2 {
 	font-size: 2rem;
 }
 
-.job-description,
+/* .job-description,
 .contact-persons {
 	padding-left: 210px;
 	padding-right: 260px;
 	line-height: 1.6;
+} */
+
+@media (min-width: 992px) {
+  .job-description,
+	.contact-persons {
+		padding-left: 210px;
+	  padding-right: 260px;
+	  line-height: 1.6;
+	}
 }
 
 @media (max-width: 768px) {
